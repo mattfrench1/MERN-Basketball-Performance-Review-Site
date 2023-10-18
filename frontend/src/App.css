@@ -1,0 +1,493 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    @import url(//fonts.googleapis.com/css?family=Font+Name);
+  */
+  
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  /* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+/* @import url(//fonts.googleapis.com/css?family=Font+Name); */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');     /* header    */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+:root{
+  /* --dark-blue: #0A2623; 
+  --medium-blue: #3a408b;                       
+  --light-blue: #A5A09C;
+  --orange: #F2D3AC;
+  --lighter-orange: #e0ceba; */
+
+  --dark-blue: #164673;
+  --medium-blue: #000000;
+  --light-blue: #cecdb4;
+  --orange: #d1827d;
+  --lighter-orange: #d1827d;
+}
+
+
+html, body {
+  background-image: url(images/basketballshoes.jpg) ;
+  /*background-color: blue; */
+  /*background-repeat: no-repeat; */
+  background-size: contain;
+  /*background-position: center center; */
+  height: 170%;
+  width: 170%;
+  /*color:var(--orange);*/
+  font-family:'Maven Pro', sans-serif;
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 2000px;
+  min-width: 800px; 
+  
+}
+
+/* .gallery { 
+  display: flex;
+  flex-flow: row wrap;
+}
+.gallery figure {
+  width: 600px;
+  margin:.70%;
+  padding:0;
+  border:5px solid var(--dark-blue);
+}
+.gallery img {
+  width:100%;
+}
+.gallery figcaption {
+  display:block;
+  padding:3px;
+} */
+
+.alignright {float:right; width:150px; border:2px solid gray;}
+
+
+
+
+
+
+/* :root {
+    --custom-color-name: url(images/pismobackground.jpg);
+    --custom-embellishment-name:;
+  }
+   */
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+ /* body {       /* Can alternatively define in html {} or :root {} */
+    /*background-color:;
+    /*background-image:;
+   /* color:;
+    /*font-family:"Bree Serif", serif; /* Define with at least one font name and its related generic family name.*/
+    /*margin:;
+    /*padding:;
+  }
+
+  /*  ----- Page layout blocks -----  */
+  header {
+    color: var(--dark-blue);
+    font-family:'Anton', sans-serif;
+  } 
+  main {
+    color: var(--medium-blue);
+    padding: 3%;
+    background-color: var(--light-blue);
+    border:5px solid var(--dark-blue);
+  }
+  section {
+    color:var(--transcolor);
+    padding: 3%;
+  }
+  /*
+    article {}
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  */
+  footer {
+    color: var(--medium-blue);
+    font-family:'Anton', sans-serif;
+  } 
+  
+  /* ----- Anchors ----- Text links */
+  /* a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {} */
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+
+
+
+
+.header-nav nav {
+  text-align: left;
+  height: 80px;
+}
+
+.header-nav a {
+  background-color: var(--orange);
+  border: 5px solid var(--dark-blue);
+  color: var(--dark-blue);
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin-right: 20px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  background-color: var(--dark-blue);
+  color: var(--orange);
+} 
+
+
+.main-nav nav {
+  text-align: left;
+  height: 80px;
+}
+
+.main-nav a {
+  background-color: var(--dark-blue);
+  border: 5px solid var(--orange);
+  color: var(--orange);
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin-right: 20x;
+  /* margin-bottom: 15px; */
+  /* margin-top: 15px; */
+  padding: 14px;
+  text-decoration: none;
+  /* display: flex; */
+  /* max-width: 200px; */
+
+
+}
+
+.main-nav a:hover {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}
+
+  
+  /*
+  .header-nav nav {
+      text-align: left;
+      height: 60px;
+    }
+
+  .header-nav nav a {
+      background-color: var(--orange);
+      border: 5px solid var(--dark-blue);
+      color: var(--dark-blue);
+      font-size: 1.1em;
+      font-weight: bolder;
+      margin-right: 20px;
+      padding: 14px;
+      text-decoration: none;
+      }
+
+  .header-nav nav a:hover {
+      background-color: var(--dark-blue);
+      color: var(--orange);
+    } 
+
+  .main-nav nav {
+    text-align: center;
+  }
+  */
+  /*
+  nav {
+    text-align: center;
+    height: 60px;
+  }
+  nav a {
+    background-color: var(--orange);
+    border: 5px solid var(--dark-blue);
+    color: var(--dark-blue);
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-right: 20px;
+    padding: 14px;
+    text-decoration: none;
+    }
+  nav a:hover {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+  } 
+  */
+  /*  -----  Typography  ----- */
+  /* p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+   */
+  
+  h1, h2, h3, h4, h5, h6 {
+    color:var(--dark-blue);
+    font-family:'Anton', sans-serif;
+  } 
+  
+  /*h1 {}
+  
+  h2 {
+    color: var(--medium-blue)
+  }
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {} 
+  */
+  /* abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+   */
+  /*  ----- Coding or instructional typography ----- */
+  /* pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {} */
+  
+  /*  ----- Table ----- */
+
+
+  .shoes {
+    border: 5px solid;
+    width: 50px;
+  }
+
+ .brand-input-box {
+  width: 170px;
+ }
+
+ .name-input-box {
+  width: 220px;
+ }
+ 
+ .input-box {
+  width: 100px;
+ }
+
+  table {
+    border: 5px solid;
+    
+  }
+  caption {
+    font-size: 120%;
+    color: var(--orange);
+  }
+  thead {
+    color: var(--orange);
+    font-size: 120%;
+    background-color: var(--light-blue);
+  }
+  tbody {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+    margin: 20%;
+  }
+  tfoot {}
+  tr {
+    margin: 30%;
+    font-size: 120%;
+  }
+    /* tr:first-child {
+      
+    } */
+    tr:nth-child(even) td {background-color: var(--orange);}
+    tr:nth-child(odd) td {background-color: var(--light-blue);}
+  th {
+    padding: 20px;
+    
+  }
+  td {
+    border: 3px solid;
+  }
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {} 
+  
+  
+  /*  ----- Form ----- */
+  form, button, input, select, textarea {
+    font-family:'Maven Pro', sans-serif;
+    font-size: 120%;
+  
+  }
+
+  input[type='radio'] { 
+    transform: scale(2); 
+}
+  fieldset {
+    border: 4px solid var(--orange);
+    /* background-color: var(--orange); */
+    margin-bottom: 7%;
+  }
+    legend {
+      font-size: 1.7em;
+      color: var(--orange);
+    }
+  label {
+    /* margin-top: 5%; */
+    display: block;
+    font-size: 90%;
+  }
+    button {
+      color: var(--orange);
+      background-color: var(--dark-blue);
+      font-size: 120%;
+    }
+    input {
+      padding: 1%;
+      font-size: 105%;
+    }
+    output {}
+    meter {}
+    progress {}
+    select {
+      color: var(--medium-blue);
+      background-color: var(--orange);
+      /* padding: 100%; */
+    }
+      optgroup {}
+      option {}
+    textarea {
+      background-color: var(--orange);
+      color: var(--medium-blue);
+      padding: 1px;
+      width: 75%;
+      border: 2px solid var(--dark-blue)
+    } 
+    ::placeholder{
+      color: var(--light-blue)
+    }
+    :required{
+      font-size: 100%;
+    }
+    :focus{
+      color: var(--medium-blue);
+    }
+  
+  /* ----- Media ----- */
+  /* figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {} */
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  /* .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {} */
+  
+  /* @keyframes App-logo {} */
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  /* @media all and (min-width: 600px) {} */
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  /* @media all and (min-width: 1080px) {} */
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  /* @media print {} */
+  
+
+
+
+
+
+
+/* .App {
+  text-align: center;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+/*
+.App-link {
+  color: #61dafb;
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
